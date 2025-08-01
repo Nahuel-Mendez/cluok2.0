@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservar turno - Clou Studio</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="../indexImage.png/logoCLOUOK.png" alt="Logo Clou Studio" />
+      <h1>Reservá tu turno</h1>
+    </header>
+
+    <main>
+      <form class="reservation-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="service">Servicio:</label>
+        <select id="service" name="service" required>
+          <option value="">Seleccioná una opción</option>
+          <option value="peluqueria">Peluquería</option>
+          <option value="unas">Uñas</option>
+          <option value="masajes">Masajes</option>
+        </select>
+
+        <label for="date">Fecha deseada:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="message">Mensaje adicional:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit" class="btn">Enviar solicitud</button>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <p>© Clou Studio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../main.js"></script>
+  </body>
+</html>
