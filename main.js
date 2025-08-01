@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const fecha = document.getElementById('date').value;
       const mensaje = document.getElementById('message').value;
 
-      const numero = '59892301335';
+      const numero = '59891340661';
       const texto = `Hola! Soy ${nombre}. Quiero reservar un turno para ${servicio} el día ${fecha}.%0AMensaje: ${mensaje}`;
 
       const url = `https://wa.me/${numero}?text=${texto}`;
