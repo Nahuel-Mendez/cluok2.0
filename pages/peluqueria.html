@@ -4,6 +4,196 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Peluqueria ClouEstudio.</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
   </head>
-  <body></body>
+
+  <body>
+    <header class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <h1 class="display-4">Peluquería ClouEstudio.</h1>
+        <p class="lead">Estilo, belleza y confianza</p>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Inicio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Uñas.</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Masajes.</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contacto.</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="py-5 bg-light text-center">
+      <div class="container">
+        <h2 class="mb-4">Tu estilo, nuestra pasión</h2>
+        <p>
+          Bienvenidos a Peluquería Glam, donde cuidamos tu cabello como merecés.
+        </p>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <!-- CORTES -->
+    <section class="container py-5">
+      <h3 class="text-center mb-4">Cortes</h3>
+      <div id="carouselCortes" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded shadow">
+          <div class="carousel-item active">
+            <img
+              src="img/servicios/corte1.jpg"
+              class="d-block w-100"
+              alt="Corte moderno"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/servicios/corte2.jpg"
+              class="d-block w-100"
+              alt="Corte clásico"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/servicios/corte3.jpg"
+              class="d-block w-100"
+              alt="Corte personalizado"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselCortes"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselCortes"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- TINTURA -->
+    <section class="container py-5">
+      <h3 class="text-center mb-4">Coloración / Tintura</h3>
+      <div id="carouselTintura" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded shadow">
+          <div class="carousel-item active">
+            <img
+              src="img/servicios/tintura1.jpg"
+              class="d-block w-100"
+              alt="Coloración 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/servicios/tintura2.jpg"
+              class="d-block w-100"
+              alt="Coloración 2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/servicios/tintura3.jpg"
+              class="d-block w-100"
+              alt="Coloración 3"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselTintura"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselTintura"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- PEINADOS -->
+    <section class="container py-5">
+      <h3 class="text-center mb-4">Peinados</h3>
+      <div id="carouselPeinados" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded shadow">
+          <div class="carousel-item active">
+            <img
+              src="img/servicios/peinado1.jpg"
+              class="d-block w-100"
+              alt="Peinado elegante"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/servicios/peinado2.jpg"
+              class="d-block w-100"
+              alt="Peinado casual"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/servicios/peinado3.jpg"
+              class="d-block w-100"
+              alt="Peinado fiesta"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselPeinados"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselPeinados"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
