@@ -174,7 +174,7 @@ h1 {
 
 /* pagina de reserva */
 
-.reservation-form {
+.reservacion {
   background-color: var(--accent);
   padding: 2rem;
   border-radius: 16px;
@@ -186,14 +186,14 @@ h1 {
   gap: 1rem;
 }
 
-.reservation-form label {
+.reservacion label {
   text-align: left;
   font-weight: 500;
 }
 
-.reservation-form input,
-.reservation-form select,
-.reservation-form textarea {
+.reservacion input,
+.reservacion select,
+.reservacion textarea {
   padding: 0.6rem;
   border: 1px solid #d8c1bc;
   border-radius: 8px;
@@ -201,6 +201,21 @@ h1 {
   font-size: 1rem;
 }
 
-.reservation-form button {
+.reservacion button {
   align-self: center;
+}
+
+/* Pagina de peluqueria */
+
+.divNavbar {
+  color: #000000;
+}
+
+.container {
+  background-color: ;
+  color: #000000;
+}
+
+.carousel {
+  background-color: #d38484;
 }
