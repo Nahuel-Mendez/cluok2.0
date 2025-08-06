@@ -1,9 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Masages ClouEstudio</title>
+    <title>Masajes - Clou Studio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
   </head>
-  <body></body>
+
+  <body>
+  <!-- header -->
+    <header class="bg-dark text-white py-4 position-relative d-flex align-items-center justify-content-center">
+    <a class="navbar-brand logo-clou position-absolute start-0 ms-3" href="../index.html" target="_blank">
+    <img src="../indexImage.png/logoCLOUOK.png" alt="logo clouok" />
+    </a>
+     <div class="text-center">
+       <h1 class="display-4 mb-1">Peluquería ClouEstudio.</h1>
+         <p class="lead">Estilo, belleza y confianza</p>
+    </div>
+</header>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md bg-light">
+  <div class="container">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#menu"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="peluqueria.html" target="_blank">Peluquería.</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./uñas.html" target="_blank">Uñas.</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reservar.html" target="_blank">Reservar.</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!-- Navbar -->
+
+    
+        <!-- Configuracion de bootstrap que hace "efecto hamburguesa" -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="peluqueria.html" target="_blank"
+                >Peluqueria.</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./uñas.html" target="_blank">Uñas.</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reservar.html" target="_blank"
+                >Reservar.</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container py-4">
+      <h2 class="text-center mb-4">Nuestros Masajes</h2>
+      <div class="row g-3 justify-content-center">
+        <div class="col-10 col-md-5 col-lg-4">
+          <div class="card p-3 shadow-sm h-100">
+            <h5>Masaje relajante</h5>
+            <p>Ideal para eliminar el estrés y mejorar el descanso.</p>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 col-lg-4">
+          <div class="card p-3 shadow-sm h-100">
+            <h5>Masaje descontracturante</h5>
+            <p>Ayuda a liberar tensiones musculares y contracturas.</p>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 col-lg-4">
+          <div class="card p-3 shadow-sm h-100">
+            <h5>Drenaje linfático</h5>
+            <p>Favorece la circulación y la eliminación de toxinas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <h2 class="text-center mb-4">Espacios & Momentos</h2>
+      <div class="row g-3">
+        <div class="col-6 col-md-4">
+          <img
+            src="../imageMassage/masaje1.jpg"
+            class="img-fluid rounded shadow-sm"
+            alt="Masaje 1"
+          />
+        </div>
+        <div class="col-6 col-md-4">
+          <img
+            src="../imageMassage/masaje2.jpg"
+            class="img-fluid rounded shadow-sm"
+            alt="Masaje 2"
+          />
+        </div>
+        <div class="col-6 col-md-4">
+          <img
+            src="../imageMassage/masaje3.jpg"
+            class="img-fluid rounded shadow-sm"
+            alt="Masaje 3"
+          />
+        </div>
+      </div>
+    </section>
+
+    <div class="text-center py-4">
+      <a href="reservar.html" class="btn btn-dark px-4 py-2" target="_blank"
+        >Reservá tu turno</a
+      >
+    </div>
+    
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/cloustudio.ok" target="_blank"
+          ><img src="../logoRedes/instagram.png" alt="Instagram"
+        /></a>
+        <a href="https://wa.me/59891340661" target="_blank"
+          ><img src="../logoRedes/whatsapp.png" alt="WhatsApp"
+        /></a>
+        <a href="mailto:correo@example.com" target="_blank"
+          ><img src="../logoRedes/google.png" alt="Correo"
+        /></a>
+      </div>
+      <p>© Clou Studio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

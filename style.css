@@ -321,3 +321,20 @@ h1 {
 .grid-uñas img:hover {
   transform: scale(1.05);
 }
+
+/* Pagina de masajes */
+
+.logo-clou img {
+  height: 130px;
+  width: auto;
+}
+
+header {
+  background-color: #202326;
+  padding: 2rem 0;
+  position: relative;
+}
+
+header .text-center {
+  flex-grow: 1;
+}
