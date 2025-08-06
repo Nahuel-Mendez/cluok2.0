@@ -325,8 +325,9 @@ h1 {
 /* Pagina de masajes */
 
 .logo-clou img {
-  height: 130px;
+  height: 120px;
   width: auto;
+  top: 0rem;
 }
 
 header {
@@ -337,4 +338,29 @@ header {
 
 header .text-center {
   flex-grow: 1;
+}
+
+@media (max-width: 300px) {
+  .logo-clou img {
+    max-width: 100%vh;
+    height: auto;
+    display: block;
+  }
+
+  .logo-clou {
+    top: 0.1rem !important;
+    left: 1.4rem !important;
+  }
+
+  header .text-center {
+    padding-top: 5rem;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  header p.lead {
+    font-size: 0.9rem;
+  }
 }
