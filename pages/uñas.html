@@ -3,8 +3,225 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
     <title>Uñas ClouEstudio</title>
   </head>
 
-  <body></body>
+  <body>
+    <!-- header -->
+    <header class="bg-dark text-white py-4">
+      <div class="container">
+        <h1 class="display-4">Peluquería ClouEstudio.</h1>
+        <p class="lead">Estilo, belleza y confianza</p>
+      </div>
+    </header>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html" target="_blank"
+          ><img
+            src="../indexImage.png/logoCLOUOK.png"
+            alt="logo clouok"
+            height="150"
+            width="auto"
+        /></a>
+        <!-- Configuracion de bootstrap que hace "efecto hamburguesa" -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="peluqueria.html" target="_blank"
+                >Peluqueria.</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="massage.html" target="_blank"
+                >Masajes.</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reservar.html" target="_blank"
+                >Reservar.</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="py-5 bg-light text-center">
+      <div class="divNavbar">
+        <h2 class="mb-4">Tu estilo, nuestra pasión</h2>
+        <p>
+          Bienvenidos a Clou Estudio, aqui trataremos tus manos de maneras que
+          querras volver a venir.
+        </p>
+      </div>
+    </section>
+
+    <!-- Seccion de especialidades, en un futuro dividire las especilidades con su respectiva foto (ahora no me dio el tiempo)-->
+    <section class="container py-5">
+      <h2 class="text-center mb-4">Trabajamos en estas especialidades.</h2>
+      <div class="row g-3 justify-content-center">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card text-center p-3 shadow-sm">
+            <p class="mb-0">Manicura rusa</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card text-center p-3 shadow-sm">
+            <p class="mb-0">Manicura tradicional</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card text-center p-3 shadow-sm">
+            <p class="mb-0">Esmaltado semi</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card text-center p-3 shadow-sm">
+            <p class="mb-0">Capping</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card text-center p-3 shadow-sm">
+            <p class="mb-0">Soft Gel</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card text-center p-3 shadow-sm">
+            <p class="mb-0">Dual sistem</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card text-center p-3 shadow-sm">
+            <p class="mb-0">Extensiones</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeria de uñas, con el grid integrado -->
+    <section class="container py-5">
+      <h2 class="text-center mb-4">Galería de Uñas</h2>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="../imageUñas/uñas1.jpg"
+            alt="Uñas 1"
+            class="img-fluid rounded shadow-sm"
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="../imageUñas/uñas2.jpg"
+            alt="Uñas 2"
+            class="img-fluid rounded shadow-sm"
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="../imageUñas/uñas3.jpg"
+            alt="Uñas 3"
+            class="img-fluid rounded shadow-sm"
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="../imageUñas/uñas4.jpg"
+            alt="Uñas 4"
+            class="img-fluid rounded shadow-sm"
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="../imageUñas/uñas5.jpg"
+            alt="Uñas 5"
+            class="img-fluid rounded shadow-sm"
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="../imageUñas/uñas6.jpg"
+            alt="Uñas 6"
+            class="img-fluid rounded shadow-sm"
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="../imageUñas/uñas7.jpg"
+            alt="Uñas 7"
+            class="img-fluid rounded shadow-sm"
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="../imageUñas/uñas8.jpg"
+            alt="Uñas 8"
+            class="img-fluid rounded shadow-sm"
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="../imageUñas/uñas9.jpg"
+            alt="Uñas 9"
+            class="img-fluid rounded shadow-sm"
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="../imageUñas/uñas10.jpg"
+            alt="Uñas 10"
+            class="img-fluid rounded shadow-sm"
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <img
+            src="../imageUñas/uñas11.jpg"
+            alt="Uñas 11"
+            class="img-fluid rounded shadow-sm"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/cloustudio.ok" target="_blank"
+          ><img src="../logoRedes/instagram.png" alt="Instagram"
+        /></a>
+        <a href="https://wa.me/59891340661" target="_blank"
+          ><img src="../logoRedes/whatsapp.png" alt="WhatsApp"
+        /></a>
+        <a href="mailto:correo@example.com" target="_blank"
+          ><img src="../logoRedes/google.png" alt="Correo"
+        /></a>
+      </div>
+      <p>© Clou Studio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
