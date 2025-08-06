@@ -322,6 +322,106 @@ h1 {
   transform: scale(1.05);
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff9f6;
+  color: #5e4a47;
+}
+
+h1,
+h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+.card h5 {
+  font-weight: 600;
+}
+
+.logo-clou img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo-clou {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 100px;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  header p.lead {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .navbar-brand img {
+    height: 100px;
+    width: auto;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  footer .footer-socials img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .logo-clou {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0.5rem;
+    width: 80px;
+  }
+
+  header .text-center {
+    padding-top: 6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .navbar-brand img {
+    height: 70px;
+    width: auto;
+  }
+
+  .logo-clou {
+    width: 65px;
+    top: 0.3rem;
+  }
+
+  header .text-center {
+    padding-top: 6.5rem;
+  }
+
+  .card {
+    padding: 1rem 0.5rem;
+  }
+
+  .card p {
+    font-size: 0.85rem;
+  }
+
+  footer .footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
 /* Pagina de masajes */
 
 .logo-clou img {
@@ -340,20 +440,40 @@ header .text-center {
   flex-grow: 1;
 }
 
-@media (max-width: 300px) {
-  .logo-clou img {
-    max-width: 100%vh;
-    height: auto;
-    display: block;
+@media (max-width: 768px) {
+  .logo-clou {
+    top: 1rem !important;
+    left: 1rem !important;
+    width: 80px;
   }
 
-  .logo-clou {
-    top: 0.1rem !important;
-    left: 1.4rem !important;
+  .logo-clou img {
+    width: 100%;
+    height: auto;
   }
 
   header .text-center {
-    padding-top: 5rem;
+    padding-top: 6rem; /* Aumentamos espacio debajo del logo */
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  header p.lead {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-clou {
+    top: 2rem !important;
+    left: 1rem !important;
+    width: 65px;
+  }
+
+  header .text-center {
+    padding-top: 6.5rem;
   }
 
   header h1 {
@@ -361,6 +481,6 @@ header .text-center {
   }
 
   header p.lead {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 }
