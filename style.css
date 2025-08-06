@@ -453,7 +453,7 @@ header .text-center {
   }
 
   header .text-center {
-    padding-top: 6rem; /* Aumentamos espacio debajo del logo */
+    padding-top: 6rem;
   }
 
   header h1 {
