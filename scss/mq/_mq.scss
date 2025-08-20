@@ -1,0 +1,168 @@
+/* responsivo general */
+@include respond(768px) {
+  header h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  header p.lead {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .navbar-brand img {
+    height: 100px;
+    width: auto;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  footer .footer-socials img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .logo-clou {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0.5rem;
+    width: 80px;
+  }
+
+  header .text-center {
+    padding-top: 6rem;
+  }
+}
+@include respond(576px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .navbar-brand img {
+    height: 70px;
+    width: auto;
+  }
+  .logo-clou {
+    width: 65px;
+    top: 0.3rem;
+  }
+  header .text-center {
+    padding-top: 6.5rem;
+  }
+  .card {
+    padding: 1rem 0.5rem;
+  }
+  .card p {
+    font-size: 0.85rem;
+  }
+  footer .footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+/* media queries de index */
+@include respond(600px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bio {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .bio-text {
+    padding: 0 1rem;
+  }
+}
+
+/* media query de reservas */
+@include respond(600px) {
+  header {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  header img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+    padding: 0 1rem;
+  }
+
+  .reservacion {
+    padding: 1rem;
+    gap: 1rem;
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+    }
+  }
+
+  .btn {
+    width: 100%;
+    padding: 0.8rem;
+  }
+
+  .footer-socials {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+// mq de masajes
+
+@include respond(768px) {
+  .logo-clou {
+    top: 1rem !important;
+    left: 1rem !important;
+    width: 80px;
+  }
+  .logo-clou img {
+    width: 100%;
+    height: auto;
+  }
+  header .text-center {
+    padding-top: 6rem;
+  }
+  header h1 {
+    font-size: 1.6rem;
+  }
+  header p.lead {
+    font-size: 1rem;
+  }
+}
+
+@include respond(576px) {
+  .logo-clou {
+    top: 2rem !important;
+    left: 1rem !important;
+    width: 65px;
+  }
+  header .text-center {
+    padding-top: 6.5rem;
+  }
+  header h1 {
+    font-size: 1.4rem;
+  }
+  header p.lead {
+    font-size: 0.95rem;
+  }
+}

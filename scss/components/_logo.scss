@@ -1,0 +1,32 @@
+/* logo genérico */
+
+.logo-clou {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 100px;
+  z-index: 10;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+/* página de masajes */
+.logo-clou img {
+  height: 120px;
+  width: auto;
+  top: 0;
+}
+
+header {
+  background-color: #202326;
+  padding: 2rem 0;
+  position: relative;
+
+  .text-center {
+    flex-grow: 1;
+  }
+}

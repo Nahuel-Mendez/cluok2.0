@@ -1,0 +1,8 @@
+/* botón de reserva */
+.btn {
+  @include btn(#5e4a47, $textoClaro);
+
+  &:hover {
+    background-color: #f7b3a7;
+  }
+}

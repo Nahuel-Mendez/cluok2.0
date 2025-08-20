@@ -1,105 +1,17 @@
-$bgMain: #c79a92;
-$textoClaro: #fff9f6;
-$accent: #f4e9e7;
-$textoOscuro: #5e4a47;
+@import './utilities/extends';
+@import './utilities/mixins';
+@import './utilities/variables';
 
-// Extend
-%reset {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import './layout/footer';
 
-%flexBasico {
-  display: flex;
-  justify-content: center;
-}
+@import './reset/reset';
 
-%flexCenter {
-  @extend %flexBasico;
-  align-items: center;
-  flex-direction: row;
-}
+@import './mq/mq';
 
-%pill {
-  border-radius: 150px;
-}
-%rounded-md {
-  border-radius: 12px;
-}
-%rounded-lg {
-  border-radius: 16px;
-}
+@import './components/buttoms';
+@import './components/logo';
 
-%avatar {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid $textoOscuro;
-}
-
-%cardSoft {
-  background-color: $accent;
-  border-radius: 16px;
-  color: $textoOscuro;
-}
-
-// MIXINS
-
-@mixin transition($prop: all, $time: 0.3s, $ease: ease) {
-  transition: #{$prop} #{$time} #{$ease};
-}
-
-@mixin hover-scale($factor: 1.05) {
-  &:hover {
-    transform: scale($factor);
-  }
-}
-
-@mixin btn($bg, $fg) {
-  background-color: $bg;
-  color: $fg;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 12px;
-  text-decoration: none;
-  cursor: pointer;
-  @include transition(background-color, 0.3s);
-}
-
-@mixin flex-center($dir: row, $wrap: wrap, $gap: 0) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: $dir;
-  flex-wrap: $wrap;
-  gap: $gap;
-}
-
-@mixin input-base {
-  padding: 0.6rem;
-  border: 1px solid #d8c1bc;
-  border-radius: 8px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-}
-
-@mixin respond($max) {
-  @media (max-width: $max) {
-    @content;
-  }
-}
-
-/* reset */
-* {
-  @extend %reset;
-}
-
-/* index */
-
-/* base */
+/* index */ /* body */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #e9d9d6;
@@ -123,13 +35,6 @@ h1 {
 }
 
 /* botón de reserva */
-.btn {
-  @include btn(#5e4a47, $textoClaro);
-
-  &:hover {
-    background-color: #f7b3a7;
-  }
-}
 
 /* sección de servicios */
 .section {
@@ -138,7 +43,7 @@ h1 {
 }
 
 .service {
-  @extend %pill;
+  @extend %border;
   background-color: #5e4a47;
   color: $textoClaro;
   padding: 1rem;
@@ -170,6 +75,7 @@ h1 {
   animation: fadeInUp 1s ease-out forwards;
 }
 
+// Animacion
 @keyframes fadeInUp {
   to {
     opacity: 1;
@@ -178,14 +84,14 @@ h1 {
 }
 
 .bio-img {
-  @extend %avatar;
+  @extend %perfil;
 }
 
 .bio-img-full {
   width: 100%;
   max-width: 200px;
   height: auto;
-  @extend %pill;
+  @extend %border;
   border: 3px solid $textoOscuro;
 }
 
@@ -194,50 +100,6 @@ h1 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   color: #5e4a47;
-}
-
-/* footer */
-.footer {
-  margin-top: 4rem;
-  padding: 2rem;
-  background-color: $accent;
-  color: $textoOscuro;
-  border-top: 1px solid #d8c1bc;
-
-  p {
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
-  }
-
-  .footer-socials {
-    @include flex-center(row, nowrap, 1.5rem);
-
-    a img {
-      width: 24px;
-      @include transition(transform, 0.3s);
-    }
-    a:hover img {
-      transform: scale(1.2);
-    }
-  }
-}
-
-/* media queries de index */
-@include respond(600px) {
-  .services {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .bio {
-    flex-direction: column;
-    text-align: center;
-    padding: 1.5rem;
-  }
-
-  .bio-text {
-    padding: 0 1rem;
-  }
 }
 
 /* página de reserva */
@@ -261,53 +123,6 @@ h1 {
 
   button {
     align-self: center;
-  }
-}
-
-/* media query de reservas */
-@include respond(600px) {
-  header {
-    text-align: center;
-    padding: 1rem;
-  }
-
-  header img {
-    max-width: 150px;
-    height: auto;
-    margin-bottom: 1rem;
-  }
-
-  header h1 {
-    font-size: 1.4rem;
-    padding: 0 1rem;
-  }
-
-  .reservacion {
-    padding: 1rem;
-    gap: 1rem;
-
-    input,
-    select,
-    textarea {
-      width: 100%;
-    }
-  }
-
-  .btn {
-    width: 100%;
-    padding: 0.8rem;
-  }
-
-  .footer-socials {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  footer p {
-    font-size: 0.9rem;
-    text-align: center;
-    margin-top: 1rem;
   }
 }
 
@@ -369,139 +184,4 @@ h2 {
 
 .card h5 {
   font-weight: 600;
-}
-
-/* logo genérico */
-.logo-clou {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  width: 100px;
-  z-index: 10;
-
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-}
-
-/* responsivo general */
-@include respond(768px) {
-  header h1 {
-    font-size: 1.8rem;
-    text-align: center;
-  }
-  header p.lead {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .navbar-brand img {
-    height: 100px;
-    width: auto;
-  }
-
-  .card p {
-    font-size: 0.9rem;
-  }
-
-  footer .footer-socials img {
-    width: 28px;
-    height: 28px;
-  }
-
-  .logo-clou {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0.5rem;
-    width: 80px;
-  }
-
-  header .text-center {
-    padding-top: 6rem;
-  }
-}
-
-@include respond(576px) {
-  header h1 {
-    font-size: 1.5rem;
-  }
-  .navbar-brand img {
-    height: 70px;
-    width: auto;
-  }
-  .logo-clou {
-    width: 65px;
-    top: 0.3rem;
-  }
-  header .text-center {
-    padding-top: 6.5rem;
-  }
-  .card {
-    padding: 1rem 0.5rem;
-  }
-  .card p {
-    font-size: 0.85rem;
-  }
-  footer .footer-socials {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-}
-
-/* página de masajes */
-.logo-clou img {
-  height: 120px;
-  width: auto;
-  top: 0;
-}
-
-header {
-  background-color: #202326;
-  padding: 2rem 0;
-  position: relative;
-
-  .text-center {
-    flex-grow: 1;
-  }
-}
-
-@include respond(768px) {
-  .logo-clou {
-    top: 1rem !important;
-    left: 1rem !important;
-    width: 80px;
-  }
-  .logo-clou img {
-    width: 100%;
-    height: auto;
-  }
-  header .text-center {
-    padding-top: 6rem;
-  }
-  header h1 {
-    font-size: 1.6rem;
-  }
-  header p.lead {
-    font-size: 1rem;
-  }
-}
-
-@include respond(576px) {
-  .logo-clou {
-    top: 2rem !important;
-    left: 1rem !important;
-    width: 65px;
-  }
-  header .text-center {
-    padding-top: 6.5rem;
-  }
-  header h1 {
-    font-size: 1.4rem;
-  }
-  header p.lead {
-    font-size: 0.95rem;
-  }
 }

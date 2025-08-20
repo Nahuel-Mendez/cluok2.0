@@ -1,0 +1,41 @@
+// Extend
+%reset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+%flexBasico {
+  display: flex;
+  justify-content: center;
+}
+
+%flexCenter {
+  @extend %flexBasico;
+  align-items: center;
+  flex-direction: row;
+}
+
+%border {
+  border-radius: 150px;
+}
+%rounded-md {
+  border-radius: 12px;
+}
+%rounded-lg {
+  border-radius: 16px;
+}
+
+%perfil {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid $textoOscuro;
+}
+
+%cardSoft {
+  background-color: $accent;
+  border-radius: 16px;
+  color: $textoOscuro;
+}
