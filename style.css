@@ -15,7 +15,8 @@
   flex-direction: row;
 }
 
-.bio-img-full, .service {
+.bio-img-full,
+.service {
   border-radius: 150px;
 }
 
@@ -27,7 +28,8 @@
   border: 3px solid #5e4a47;
 }
 
-.reservacion, .bio {
+.reservacion,
+.bio {
   background-color: #f4e9e7;
   border-radius: 16px;
   color: #5e4a47;
@@ -37,7 +39,7 @@
 /* index */
 /* base */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #e9d9d6;
   color: #fff9f6;
   text-align: center;
@@ -52,7 +54,7 @@ header img {
 }
 
 h1 {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 2rem;
   color: #5e4a47;
   margin-bottom: 1rem;
@@ -92,7 +94,7 @@ h1 {
   width: 140px;
   text-align: center;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1rem;
   transition: transform 0.3s ease;
@@ -129,7 +131,7 @@ h1 {
 }
 
 .bio-text h2 {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   color: #5e4a47;
@@ -201,7 +203,7 @@ h1 {
   padding: 0.6rem;
   border: 1px solid #d8c1bc;
   border-radius: 8px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
 }
 .reservacion button {
@@ -275,7 +277,7 @@ h1 {
   background-color: #fff9f6;
 }
 .galeria-uñas h2 {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 2rem;
   margin-bottom: 2rem;
   color: #5e4a47;
@@ -297,14 +299,14 @@ h1 {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #fff9f6;
   color: #5e4a47;
 }
 
 h1,
 h2 {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .card h5 {
